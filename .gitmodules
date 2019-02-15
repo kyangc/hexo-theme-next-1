@@ -1,0 +1,9 @@
+[submodule "source/lib/pdf"]
+	path = source/lib/pdf
+	url = git@github.com:theme-next/theme-next-pdf.git
+[submodule "source/lib/fancybox"]
+	path = source/lib/fancybox
+	url = git@github.com:theme-next/theme-next-fancybox3.git
+[submodule "source/lib/pangu"]
+	path = source/lib/pangu
+	url = git@github.com:theme-next/theme-next-pangu.git
