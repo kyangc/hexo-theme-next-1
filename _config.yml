@@ -235,8 +235,7 @@ sidebar:
   position: left
   #position: right
 
-  # Manual define the sidebar width.
-  # If commented, will be default for:
+  # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
   #width: 300
@@ -259,6 +258,8 @@ sidebar:
   scrollpercent: false
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
+  # Click any blank part of the page to close sidebar (only for Muse | Mist).
+  dimmer: true
 
 
 # ---------------------------------------------------------------
@@ -506,6 +507,11 @@ han: false
 # For more information: https://github.com/vinta/pangu.js
 pangu: false
 
+# quicklink Support
+# Dependencies: https://cdn.jsdelivr.net/npm/quicklink/dist/
+# Visit https://github.com/GoogleChromeLabs/quicklink for details
+quicklink: false
+
 # Swiftype Search API Key
 #swiftype_key:
 
@@ -618,7 +624,9 @@ needmoreshare2:
 google_site_verification: nkXmmG07HVpLxAu6KTZ6Z3JZ0T3ZvUUU0YADWOg8JhA
 
 # Google Analytics
-google_analytics: UA-66731021-1
+# google_analytics:
+#   tracking_id:
+#   localhost_ignored: true
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
@@ -1008,6 +1016,12 @@ vendors:
   # pangu: //cdn.jsdelivr.net/npm/pangu@3/dist/browser/pangu.min.js
   # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
   pangu:
+
+  # Internal version: 1.0.0
+  # See: https://github.com/GoogleChromeLabs/quicklink
+  # Example:
+  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1.0.0/dist/quicklink.umd.js
+  quicklink:
 
   # Internal version: 1.0.0
   # See: https://github.com/revir/need-more-share2
