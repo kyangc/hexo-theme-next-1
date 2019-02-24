@@ -66,11 +66,11 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, `author` from Hexo main config will be used.
   copyright:
@@ -253,7 +253,7 @@ sidebar:
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
   # Back to top in sidebar.
-  b2t: false
+  b2t: true
   # Scroll percent label in b2t button.
   scrollpercent: false
   # Enable sidebar on narrow view (only for Muse | Mist).
@@ -267,7 +267,7 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: false
@@ -278,7 +278,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 150
 
 # Read more button
@@ -289,19 +289,19 @@ read_more_btn: true
 post_meta:
   item_text: true
   created_at: true
-  updated_at: true
+  updated_at: false
   enabled: true
   # If true, show updated date label only if `updated date` different from `created date` (post edited in another day than was created).
   # And if post will edited in same day as created, edited time will show in popup title under created time label.
   # If false show anyway, but if post edited in same day, show only edited time.
-  another_day: true
+  another_day: false
   categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
+  separated_meta: false
+  item_text_post: false
   item_text_total: false
   awl: 4
   wpm: 275
@@ -309,7 +309,7 @@ symbols_count_time:
 codeblock:
   # Manual define the border radius in codeblock
   # Leave it empty for the default 1
-  border_radius: 3
+  border_radius: 2
   # Add copy button on codeblock
   copy_button:
     enable: true
@@ -358,7 +358,7 @@ post_edit:
 # ---------------------------------------------------------------
 
 # Disable Baidu tranformation on mobile devices.
-disable_baidu_tranformation: true
+disable_baidu_tranformation: false
 
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
@@ -505,7 +505,7 @@ han: false
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
 # For more information: https://github.com/vinta/pangu.js
-pangu: false
+pangu: true
 
 # quicklink Support
 # Dependencies: https://cdn.jsdelivr.net/npm/quicklink/dist/
@@ -516,7 +516,7 @@ quicklink: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: 79e5f1777443ff6072c9987f30cad699
+# baidu_analytics: 79e5f1777443ff6072c9987f30cad699
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -527,7 +527,7 @@ disqus:
   enable: false
   shortname:
   count: true
-  lazyload: false
+  lazyload: true
 
 # Changyan
 changyan:
@@ -542,7 +542,7 @@ valine:
   enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
   appid: MSr2HPfx4MyLquALm7PlnpNc-gzGzoHsz # your leancloud application appid
   appkey: bydxeOtJkbgnFmUYvcmPWGY2 # your leancloud application appkey
-  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
+  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: 说两句呗 # comment box placeholder
   avatar: mm # gravatar style
@@ -621,12 +621,12 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
-google_site_verification: nkXmmG07HVpLxAu6KTZ6Z3JZ0T3ZvUUU0YADWOg8JhA
+# google_site_verification: nkXmmG07HVpLxAu6KTZ6Z3JZ0T3ZvUUU0YADWOg8JhA
 
 # Google Analytics
-# google_analytics:
-#   tracking_id:
-#   localhost_ignored: true
+google_analytics:
+  tracking_id: UA-66731021-1
+  localhost_ignored: true
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
@@ -714,7 +714,7 @@ busuanzi_count:
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: true
+  post_views: false
   post_views_icon: eye
 
 # Tencent analytics ID
@@ -848,7 +848,7 @@ fancybox: true
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: true
+fastclick: false
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
