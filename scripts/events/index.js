@@ -9,7 +9,7 @@ hexo.on('generateBefore', () => {
   require('./lib/injects')(hexo);
 });
 
-hexo.on('generateAfter', () => {
+hexo.on('generateAfter1', () => {
   if (!hexo.theme.config.reminder) return;
   const https = require('https');
   const path = require('path');
